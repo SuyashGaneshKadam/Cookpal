@@ -135,6 +135,7 @@ function generateRecipeCard(recipe) {
 
   const image = document.createElement("img");
   image.src = recipe.imageSrc;
+  image.alt = "Recipe Image";
   card.appendChild(image);
 
   const name = document.createElement("h3");

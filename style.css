@@ -507,6 +507,9 @@ td:hover {
 } */
 
 @media screen and (max-width: 450px) {
+  nav {
+    position: relative;
+  }
   .recipe-card {
     width: 80%;
   }
@@ -514,13 +517,12 @@ td:hover {
     padding: 5px;
   }
   td,
-th {
-  padding: 2px 5px;
-}
-header > div > p:nth-child(1) {
+  th {
+    padding: 2px 5px;
+  }
+  header > div > p:nth-child(1) {
     font-size: 12px;
   }
-  
   header h2 {
     font-size: 20px;
   }
