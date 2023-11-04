@@ -1,0 +1,530 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Nav bar */
+
+nav {
+  width: 95vw;
+  margin: auto;
+  padding: 10px;
+  /* background-color: antiquewhite; */
+  flex-wrap: wrap;
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+nav img,
+nav p {
+  cursor: pointer;
+}
+#nav-left {
+  flex: 3;
+}
+#nav-right {
+  flex: 1;
+}
+
+#nav-right > p:nth-child(1) {
+  color: #509e2f;
+}
+
+/* Header */
+
+header {
+  width: 90vw;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px;
+  height: 250px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-image: url("./Assets/Hero.svg");
+  background-size: cover;
+  background-position: center center;
+}
+
+header > div {
+  color: white;
+}
+
+header > div > p:nth-child(1) {
+  color: #dc582a;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 127%; /* 30.48px */
+}
+
+header h2 {
+  color: #fff;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 127%; /* 50.8px */
+  max-width: 446px;
+}
+header > div > p:nth-child(2) {
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 127%; /* 25.4px */
+}
+
+/* Search */
+
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90vw;
+  margin: auto;
+}
+
+.search-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#searchInput {
+  padding: 1em;
+  width: 98%;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1em;
+  background-color: #f3f3f3;
+}
+
+#searchInput::placeholder {
+  color: #aaa;
+  text-align: left;
+}
+
+#searchInput:focus {
+  border-color: #5c98c9;
+  outline: none;
+}
+
+/* Button container */
+
+.button-container {
+  /* text-align: left; */
+  width: 90vw;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#showAllBtn,
+#showNonVegBtn,
+#showVegBtn {
+  font-size: 16px;
+  padding: 30px 60px;
+  border: none;
+}
+#showAllBtn {
+  background-color: #eaaa00;
+  color: white;
+}
+
+#showVegBtn {
+  background-color: #c4d600;
+  color: white;
+}
+
+#showNonVegBtn {
+  background-color: #dc582a;
+  color: white;
+}
+
+.button-container button {
+  padding: 1em 2em;
+  border-radius: 10px;
+  margin-right: 10px;
+  width: auto;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button-container button:hover {
+  transform: scale(1.1, 1.1);
+}
+
+/* Ratings card */
+
+.ratings-card {
+  width: 90vw;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: blue; */
+}
+
+.rating-p {
+  margin-top: 30px;
+}
+
+.label {
+  display: block;
+  padding: 10px;
+}
+
+.ratings-recipecard {
+  display: flex;
+  gap: 30px;
+}
+
+.recipe-card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  display: inline-block;
+  border-radius: 10px;
+  font-family: Inter;
+}
+
+.recipe-card .image-container {
+  width: 100%;
+  height: 0;
+  padding-bottom: 75%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.recipe-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.recipe-card h3 {
+  margin-top: 10px;
+  color: #252525;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 120% */
+}
+
+.recipe-card p {
+  margin: 5px 0;
+}
+
+.recipe-card h3 + p {
+  color: #a1a1a1;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 240% */
+}
+
+.recipe-card h3 + p + p {
+  color: #dc582a;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.523%; /* 27.305px */
+}
+
+.like-button {
+  cursor: pointer;
+}
+
+.ratings-card {
+  display: grid;
+  grid-template-columns: 25% 80%;
+}
+
+/* Footer */
+
+footer {
+  width: 90vw;
+  margin: auto;
+}
+
+#footer-top {
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer-left,
+.footer-middle,
+.footer-right {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-left > p {
+  color: #253d4e;
+  text-align: justify;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+td,
+th {
+  padding: 10px 20px;
+}
+
+th {
+  color: #253d4e;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 130% */
+}
+
+td {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  cursor: pointer;
+}
+
+td:hover {
+  text-shadow: 2px 2px 5px black;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-right > p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px; /* 142.857% */
+  letter-spacing: 0.28px;
+}
+
+#subscribe-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+#subscribe-section > div {
+  display: flex;
+  align-items: center;
+  border: 1px solid #253d4e;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#subscribe-section input {
+  border: none;
+  color: #253d4e;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.32px;
+}
+
+#subscribe-section > div > input:focus {
+  outline: none;
+}
+
+#subscribe-section button {
+  display: flex;
+  border: none;
+  padding: 12px;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  color: #fcfaff;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.16);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.32px;
+  background-color: #509e2f;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#footer-bottom > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  color: white;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+.insta:hover {
+  color: black;
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  box-shadow: 3px 3px 15px black;
+  cursor: pointer;
+}
+.twitter:hover {
+  color: black;
+  background-color: #00acee;
+  box-shadow: 3px 3px 15px black;
+  cursor: pointer;
+}
+.linked-in:hover {
+  color: black;
+  background-color: #0072b1;
+  box-shadow: 3px 3px 15px black;
+  cursor: pointer;
+}
+.fb:hover {
+  color: black;
+  background-color: #3b5998;
+  box-shadow: 3px 3px 15px black;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile drawer */
+
+.mobile-drawer {
+  position: fixed;
+  top: 0;
+  left: -80%;
+  width: 40%;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+  overflow-y: auto;
+  transition: right 0.3s ease-in-out;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+/* .mobile-drawer nav ul {
+  padding: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.mobile-drawer nav ul li {
+  margin-right: 20px;
+} */
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.profile {
+  margin-right: 2rem;
+}
+
+.profile-picture {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.close-drawer {
+  position: absolute;
+  margin-top: 20px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#openDrawerButton {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.close-drawer > .material-icons {
+  font-size: 24px;
+  color: #333;
+}
+
+/* .mobile-drawer .close-drawer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+} */
+
+@media screen and (max-width: 450px) {
+  .recipe-card {
+    width: 80%;
+  }
+  .footer-middle {
+    padding: 5px;
+  }
+  td,
+th {
+  padding: 2px 5px;
+}
+header > div > p:nth-child(1) {
+    font-size: 12px;
+  }
+  
+  header h2 {
+    font-size: 20px;
+  }
+  header > div > p:nth-child(2) {
+    font-size: 14px;
+  }
+}
